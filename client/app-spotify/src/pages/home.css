@@ -1,0 +1,78 @@
+.gradient {
+    background: linear-gradient(to bottom, #333333, #1E1E1E);
+    /* Gradiente que começa com um tom de preto (#333333) e vai ficando mais escuro (#1E1E1E) */
+    color: #FFFFFF;
+    /* Cor do texto */
+    border-radius: 50px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3),
+        0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidade */
+    text-align: center;padding: 0px;
+    /* Centraliza o texto */
+    font-size: 1.2rem;
+    /* Tamanho da fonte */
+    line-height: 1.5;
+    /* Espaçamento entre as linhas */
+}
+.gradient2 {
+    background: linear-gradient(to bottom, #333333, #1E1E1E);
+    /* Gradiente que começa com um tom de preto (#333333) e vai ficando mais escuro (#1E1E1E) */
+    color: #FFFFFF;
+    /* Cor do texto */
+    border-radius: 50px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3),
+        0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidade */
+    text-align: center;padding: 0px;
+    /* Centraliza o texto */
+    font-size: 12px;
+    /* Tamanho da fonte */
+    /* Espaçamento entre as linhas */
+    padding: 20px;
+}
+article{
+    padding: 0px;
+}
+
+.title-home{
+    font-size: 40px;
+}
+
+@media(max-width:1000px){
+    .title-home{
+        font-size: 30px;
+    }
+}
+
+@media ((min-width: 401px) and (max-width: 550px)) {
+    * {
+        font-size: 8px;
+    }
+    .gradient2{
+        height: 100%;
+        font-size: 8px;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .title-home{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title-home{
+        font-size: 20px;
+    }
+    * {
+        font-size: 6px;
+    }
+    .gradient2{
+        height: 100%;
+        font-size: 6px;
+        padding: 5px;
+        margin: 0px;
+    }
+}

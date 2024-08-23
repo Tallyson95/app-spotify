@@ -1,0 +1,13 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+
+
+# Ignorar logs
+logs/
+*.log
+npm-debug.log*
+
+# Ignorar arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
