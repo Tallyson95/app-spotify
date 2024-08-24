@@ -98,7 +98,7 @@ function BuscarArtistas({ setMostrarBuscarArtistas }) {
 
 
             <div>
-                <h2>Seus artistas</h2>
+                <h2 style={{marginLeft:'1.5rem'}}>Seus artistas</h2>
                 <table className="tabela">
                     <thead>
                         <tr className="cabecalho-tabela">

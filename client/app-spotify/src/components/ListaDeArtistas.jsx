@@ -95,7 +95,7 @@ function ListaDeArtistas({ artistas, generosComuns }) {
                         <thead>
                             <tr className="cabecalho-tabela">
                                 <th className="cabecalho-centralizado">Ranking</th>
-                                <th className="cabecalho-centralizado">Nome</th>
+                                <th className="cabecalho-centralizado">Gênero</th>
                             </tr>
                         </thead>
                         <tbody>
