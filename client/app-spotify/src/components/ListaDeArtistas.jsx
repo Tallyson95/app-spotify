@@ -91,20 +91,19 @@ function ListaDeArtistas({ artistas, generosComuns }) {
                         </tbody>
                     </table>
 
-                    {/* Tabela de Gêneros Comuns */}
                     <table className="tabela">
                         <thead>
                             <tr className="cabecalho-tabela">
-                                <th className="cabecalho-centralizado">ID</th>
+                                <th className="cabecalho-centralizado">Ranking</th>
                                 <th className="cabecalho-centralizado">Nome</th>
                             </tr>
                         </thead>
                         <tbody>
                             {Array.isArray(generosComuns) && generosComuns.length > 0 ? (
-                                generosComuns.map((genero) => (
-                                    <tr key={genero.id}>
-                                        <td className="celula-centralizada">{genero.id}</td>
-                                        <td className="celula-centralizada">{genero.name}</td>
+                                generosComuns.map((genero, index) => (
+                                    <tr key={index}>
+                                        <td className="celula-centralizada">{index+1}</td>
+                                        <td className="celula-centralizada">{genero}</td>
                                     </tr>
                                 ))
                             ) : (

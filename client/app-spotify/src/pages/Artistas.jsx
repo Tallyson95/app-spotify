@@ -11,7 +11,7 @@ function Artistas() {
     const obterListaArtistas = () => {
         axios.post('http://localhost:3000/process-artists')
             .then((response) => {
-                setArtistas(response.data.ordenacaoArtistas);
+                setArtistas(response.data.ordenacaoSeguidor);
                 setGenerosComuns(response.data.generosComuns);
             })
             .catch((error) => {
