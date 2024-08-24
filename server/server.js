@@ -98,19 +98,19 @@ const sendArtistData = async () => {
         const genres = [...new Set(artists.map(artist => artist.genres).flat())].slice(0, 5);
 
         const body = {
-            github_url: "https://github.com/tallyson95",
+            github_url: "https://github.com/Tallyson95/app-spotify",
             name: "Tallyson Pereira da Silva",
             pop_ranking: ordenacaoSeguidor,
             genre_ranking: genres,
         };
 
-        await axios.post('https://psel-solution-automation-cf-ubqz773kaq-uc.a.run.app?access_token=bC2lWA5c7mt1rSPR', body, {
+        const response = await axios.post('https://psel-solution-automation-cf-ubqz773kaq-uc.a.run.app?access_token=bC2lWA5c7mt1rSPR', body, {
             headers: {
                 'Content-Type': 'application/json',
             }
         });
 
-        console.log('Dados dos artistas enviados com sucesso!');
+        console.log('Dados dos artistas enviados com sucesso: ', response.data );
     } catch (error) {
         console.error('Erro ao enviar dados dos artistas:', error);
     }
@@ -140,14 +140,19 @@ app.post('/process-artists', async (req, res) => {
                 imageUrl: artist.imageUrl
             }));
 
+        
+        const generosComuns = [...new Set(artists.map(artist => artist.genres).flat())].slice(0, 5);
+
         res.json({
-            ordenacaoSeguidor
+            ordenacaoSeguidor,
+            generosComuns
         });
     } catch (error) {
         console.error('Erro ao processar artistas:', error);
         res.status(500).send('Erro interno do servidor');
     }
 });
+
 
 app.listen(port, async () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
