@@ -1,5 +1,4 @@
-Olá, meu nome é Tallyson e desenvolvi essa aplicação como solução de um case.
-O projeto faz comunicação com API Spotify for developers.
+Olá, meu nome é Tallyson e desenvolvi essa aplicação com intuito de estudar mais acerca de integrações de Api, e para isto, realizo comunicação com API Spotify for developers.
 Para rodar o projeto em sua máquina basta seguir os passos abaixo:
 
 Passo 00: Caso não tenha instalado em sua máquina, será necessário baixar o node.js, você pode instalar a última versão do node.
